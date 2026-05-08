@@ -8,7 +8,10 @@
     "https://mail.naver.com/*",
     "https://mail.daum.net/*",
     "https://mail.kakao.com/*",
-    "https://mail3.nate.com/*"
+    "https://mail3.nate.com/*",
+    "https://outlook.live.com/*",
+    "https://outlook.office.com/*",
+    "https://outlook.office365.com/*"
   ],
   "content_scripts": [
     {
@@ -50,6 +53,20 @@
         "src/lib/personal-domains.js",
         "src/lib/icon-builder.js",
         "src/adapters/nate.js"
+      ],
+      "css": ["src/styles/common.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://outlook.live.com/*",
+        "https://outlook.office.com/*",
+        "https://outlook.office365.com/*"
+      ],
+      "js": [
+        "src/lib/personal-domains.js",
+        "src/lib/icon-builder.js",
+        "src/adapters/outlook.js"
       ],
       "css": ["src/styles/common.css"],
       "run_at": "document_idle"
