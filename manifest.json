@@ -11,6 +11,7 @@
       "matches": ["https://mail.google.com/*"],
       "js": [
         "src/lib/personal-domains.js",
+        "src/lib/icon-builder.js",
         "src/adapters/gmail.js"
       ],
       "css": ["src/styles/common.css"],

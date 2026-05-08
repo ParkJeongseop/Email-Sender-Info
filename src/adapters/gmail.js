@@ -5,68 +5,10 @@
   const ROW_SELECTOR = "tr.zA";
   const MESSAGE_SELECTOR = ".gE";
   const SENDER_SELECTOR = "span[email]";
-  const ICON_CLASS = "esi-icon";
-  const PERSONAL_CLASS = "esi-icon--personal";
-  const FAVICON_CLASS = "esi-icon--favicon";
+  const ICON_CLASS = ESI.ICON_CLASS || "esi-icon";
 
-  const PERSON_SVG_BADGE =
-    '<svg viewBox="0 0 16 16" aria-hidden="true">' +
-    '<circle cx="8" cy="5.5" r="3" fill="currentColor"/>' +
-    '<path d="M2 14.5c0-3.3 2.7-6 6-6s6 2.7 6 6" fill="currentColor"/>' +
-    "</svg>";
-
-  function getDomain(email) {
-    const at = email.lastIndexOf("@");
-    if (at === -1) return null;
-    return email.slice(at + 1).toLowerCase().trim();
-  }
-
-  function faviconUrl(domain) {
-    return (
-      "https://www.google.com/s2/favicons?domain=" +
-      encodeURIComponent(domain) +
-      "&sz=32"
-    );
-  }
-
-  function buildIcon(email) {
-    const domain = getDomain(email);
-    if (!domain) return null;
-
-    const wrapper = document.createElement("span");
-    wrapper.className = ICON_CLASS;
-    wrapper.title = email;
-
-    const img = document.createElement("img");
-    img.className = "esi-icon__img";
-    img.src = faviconUrl(domain);
-    img.alt = domain;
-    img.width = 16;
-    img.height = 16;
-    img.loading = "lazy";
-    img.addEventListener("error", function () {
-      const letter = document.createElement("span");
-      letter.className = "esi-icon__letter";
-      letter.textContent = domain.charAt(0).toUpperCase();
-      img.replaceWith(letter);
-    });
-    wrapper.appendChild(img);
-
-    if (ESI.isPersonalDomain && ESI.isPersonalDomain(domain)) {
-      wrapper.classList.add(PERSONAL_CLASS);
-      const badge = document.createElement("span");
-      badge.className = "esi-icon__personal-badge";
-      badge.innerHTML = PERSON_SVG_BADGE;
-      wrapper.appendChild(badge);
-    } else {
-      wrapper.classList.add(FAVICON_CLASS);
-    }
-
-    return wrapper;
-  }
-
-  function pickVisibleSender(row) {
-    const candidates = row.querySelectorAll(SENDER_SELECTOR);
+  function pickVisibleSender(container) {
+    const candidates = container.querySelectorAll(SENDER_SELECTOR);
     for (const el of candidates) {
       const cs = getComputedStyle(el);
       if (cs.display !== "none" && cs.visibility !== "hidden") {
@@ -86,13 +28,11 @@
     if (existing && row.dataset.esiEmail === email) return;
     if (existing) existing.remove();
 
-    const icon = buildIcon(email);
+    const icon = ESI.buildIcon(email);
     if (!icon) return;
 
-    // Insert into the sender's TD (.yX) at start — guaranteed visible block.
     const senderTd = senderEl.closest("td.yX") || senderEl.parentElement;
     senderTd.insertBefore(icon, senderTd.firstChild);
-
     row.dataset.esiEmail = email;
   }
 
@@ -105,7 +45,7 @@
     if (existing && message.dataset.esiEmail === email) return;
     if (existing) existing.remove();
 
-    const icon = buildIcon(email);
+    const icon = ESI.buildIcon(email);
     if (!icon) return;
 
     senderEl.parentNode.insertBefore(icon, senderEl);
