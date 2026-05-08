@@ -3,6 +3,7 @@
 
   const ESI = window.ESI || {};
   const ROW_SELECTOR = "tr.zA";
+  const MESSAGE_SELECTOR = ".gE";
   const SENDER_SELECTOR = "span[email]";
   const ICON_CLASS = "esi-icon";
   const PERSONAL_CLASS = "esi-icon--personal";
@@ -95,8 +96,25 @@
     row.dataset.esiEmail = email;
   }
 
+  function processMessage(message) {
+    const senderEl = pickVisibleSender(message);
+    if (!senderEl) return;
+
+    const email = senderEl.getAttribute("email");
+    const existing = message.querySelector("." + ICON_CLASS);
+    if (existing && message.dataset.esiEmail === email) return;
+    if (existing) existing.remove();
+
+    const icon = buildIcon(email);
+    if (!icon) return;
+
+    senderEl.parentNode.insertBefore(icon, senderEl);
+    message.dataset.esiEmail = email;
+  }
+
   function processAll() {
     document.querySelectorAll(ROW_SELECTOR).forEach(processRow);
+    document.querySelectorAll(MESSAGE_SELECTOR).forEach(processMessage);
   }
 
   let scheduled = false;
