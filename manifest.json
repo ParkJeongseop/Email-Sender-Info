@@ -5,7 +5,8 @@
   "description": "Show sender favicons and a personal-mail indicator across Gmail, Naver, Daum and more.",
   "host_permissions": [
     "https://mail.google.com/*",
-    "https://mail.naver.com/*"
+    "https://mail.naver.com/*",
+    "https://mail.daum.net/*"
   ],
   "content_scripts": [
     {
@@ -24,6 +25,16 @@
         "src/lib/personal-domains.js",
         "src/lib/icon-builder.js",
         "src/adapters/naver.js"
+      ],
+      "css": ["src/styles/common.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mail.daum.net/*"],
+      "js": [
+        "src/lib/personal-domains.js",
+        "src/lib/icon-builder.js",
+        "src/adapters/daum.js"
       ],
       "css": ["src/styles/common.css"],
       "run_at": "document_idle"
