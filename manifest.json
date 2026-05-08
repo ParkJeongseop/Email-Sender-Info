@@ -6,7 +6,8 @@
   "host_permissions": [
     "https://mail.google.com/*",
     "https://mail.naver.com/*",
-    "https://mail.daum.net/*"
+    "https://mail.daum.net/*",
+    "https://mail.kakao.com/*"
   ],
   "content_scripts": [
     {
@@ -30,7 +31,10 @@
       "run_at": "document_idle"
     },
     {
-      "matches": ["https://mail.daum.net/*"],
+      "matches": [
+        "https://mail.daum.net/*",
+        "https://mail.kakao.com/*"
+      ],
       "js": [
         "src/lib/personal-domains.js",
         "src/lib/icon-builder.js",
