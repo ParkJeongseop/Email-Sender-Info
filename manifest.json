@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "description": "Show sender favicons and a personal-mail indicator across Gmail, Naver, Daum and more.",
   "host_permissions": [
-    "https://mail.google.com/*"
+    "https://mail.google.com/*",
+    "https://mail.naver.com/*"
   ],
   "content_scripts": [
     {
@@ -13,6 +14,16 @@
         "src/lib/personal-domains.js",
         "src/lib/icon-builder.js",
         "src/adapters/gmail.js"
+      ],
+      "css": ["src/styles/common.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mail.naver.com/*"],
+      "js": [
+        "src/lib/personal-domains.js",
+        "src/lib/icon-builder.js",
+        "src/adapters/naver.js"
       ],
       "css": ["src/styles/common.css"],
       "run_at": "document_idle"
