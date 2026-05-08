@@ -7,7 +7,8 @@
     "https://mail.google.com/*",
     "https://mail.naver.com/*",
     "https://mail.daum.net/*",
-    "https://mail.kakao.com/*"
+    "https://mail.kakao.com/*",
+    "https://mail3.nate.com/*"
   ],
   "content_scripts": [
     {
@@ -39,6 +40,16 @@
         "src/lib/personal-domains.js",
         "src/lib/icon-builder.js",
         "src/adapters/daum.js"
+      ],
+      "css": ["src/styles/common.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mail3.nate.com/*"],
+      "js": [
+        "src/lib/personal-domains.js",
+        "src/lib/icon-builder.js",
+        "src/adapters/nate.js"
       ],
       "css": ["src/styles/common.css"],
       "run_at": "document_idle"
