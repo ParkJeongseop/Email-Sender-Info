@@ -4,6 +4,7 @@
   const ESI = window.ESI || {};
   const ROW_SELECTOR = "ol.list_body > li";
   const SENDER_LINK_SELECTOR = "a.name";
+  const MESSAGE_SELECTOR = "._nmFrom, ._nmTo, ._nmCc, ._nmBcc";
   const ICON_CLASS = ESI.ICON_CLASS || "esi-icon";
 
   function extractEmail(source) {
@@ -33,8 +34,30 @@
     row.dataset.esiEmail = email;
   }
 
+  function processMessage(message) {
+    const link = message.querySelector("a");
+    const source = (link || message).textContent;
+    const email = extractEmail(source);
+    if (!email) return;
+
+    const existing = message.querySelector("." + ICON_CLASS);
+    if (existing && message.dataset.esiEmail === email) return;
+    if (existing) existing.remove();
+
+    const icon = ESI.buildIcon(email);
+    if (!icon) return;
+
+    if (link) {
+      link.insertBefore(icon, link.firstChild);
+    } else {
+      message.insertBefore(icon, message.firstChild);
+    }
+    message.dataset.esiEmail = email;
+  }
+
   function processAll() {
     document.querySelectorAll(ROW_SELECTOR).forEach(processRow);
+    document.querySelectorAll(MESSAGE_SELECTOR).forEach(processMessage);
   }
 
   let scheduled = false;
