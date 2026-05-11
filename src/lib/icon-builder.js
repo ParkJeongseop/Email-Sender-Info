@@ -78,14 +78,7 @@ window.ESI = window.ESI || {};
     );
   };
 
-  ESI.buildIcon = function (email) {
-    const domain = ESI.getDomain(email);
-    if (!domain) return null;
-
-    const wrapper = document.createElement("span");
-    wrapper.className = ESI.ICON_CLASS;
-    wrapper.title = email;
-
+  function makeFaviconImg(domain) {
     const img = document.createElement("img");
     img.className = "esi-icon__img";
     img.src = ESI.faviconUrl(domain);
@@ -99,7 +92,48 @@ window.ESI = window.ESI || {};
       letter.textContent = domain.charAt(0).toUpperCase();
       img.replaceWith(letter);
     });
-    wrapper.appendChild(img);
+    return img;
+  }
+
+  function makeLetterFallback(domain) {
+    const letter = document.createElement("span");
+    letter.className = "esi-icon__letter";
+    letter.textContent = domain.charAt(0).toUpperCase();
+    return letter;
+  }
+
+  function makeDataUrlImg(domain, dataUrl) {
+    const img = document.createElement("img");
+    img.className = "esi-icon__img";
+    img.src = dataUrl;
+    img.alt = domain;
+    img.width = 16;
+    img.height = 16;
+    return img;
+  }
+
+  // buildIcon options:
+  //   useDataUrl: true  — replace the external <img src> with a letter fallback
+  //                       (caller should prefetch the data URL themselves)
+  //   dataUrl: string   — render this data URL directly as the favicon image
+  ESI.buildIcon = function (email, options) {
+    const domain = ESI.getDomain(email);
+    if (!domain) return null;
+
+    options = options || {};
+    const wrapper = document.createElement("span");
+    wrapper.className = ESI.ICON_CLASS;
+    wrapper.title = email;
+
+    if (typeof options.dataUrl === "string") {
+      wrapper.appendChild(makeDataUrlImg(domain, options.dataUrl));
+    } else if (options.useDataUrl) {
+      // Data URL was requested but not provided — fall back to a letter so we
+      // never load a CSP-blocked external image.
+      wrapper.appendChild(makeLetterFallback(domain));
+    } else {
+      wrapper.appendChild(makeFaviconImg(domain));
+    }
 
     const govCountry = ESI.getGovernmentCountry(domain);
     if (govCountry && GOV_EMBLEMS[govCountry]) {
