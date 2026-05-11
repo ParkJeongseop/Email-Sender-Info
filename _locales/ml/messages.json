@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "ഇമെയിൽ അയച്ചയാളിന്റെ വിവരം Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Gmail, Outlook, iCloud, Yahoo എന്നിവയിലും മറ്റ് സേവനങ്ങളിലും അയച്ചയാളിന്റെ favicon-ഉം ഐഡന്റിറ്റി ബാഡ്ജും (കമ്പനി / വ്യക്തിഗത / സർക്കാർ) കാണിക്കുക.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

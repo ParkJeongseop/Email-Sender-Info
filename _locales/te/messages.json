@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "ఇమెయిల్ పంపేవారి సమాచారం Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Gmail, Outlook, iCloud, Yahoo మరియు ఇతర సేవల్లో పంపేవారి favicon మరియు గుర్తింపు బ్యాడ్జ్ (కంపెనీ / వ్యక్తిగత / ప్రభుత్వం) చూపండి.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

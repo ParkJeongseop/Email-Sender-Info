@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "ईमेल भेजने वाले की जानकारी Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Gmail, Outlook, iCloud, Yahoo और अन्य में प्रेषक के favicon और पहचान बैज (कंपनी / व्यक्तिगत / सरकार) दिखाएँ।",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

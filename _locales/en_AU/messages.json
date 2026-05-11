@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Show sender favicons and an identity badge (company / personal / government) across Gmail, Outlook, iCloud, Yahoo, and more.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

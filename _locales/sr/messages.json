@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Информације о пошиљаоцу Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Приказује фавиконе пошиљалаца и ознаку идентитета (компанија / лично / влада) у Gmail-у, Outlook-у, iCloud-у, Yahoo-у и другима.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

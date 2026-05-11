@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Afzenderinformatie e-mail Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Toont afzender-favicons en een identiteitsbadge (bedrijf / persoonlijk / overheid) in Gmail, Outlook, iCloud, Yahoo en meer.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

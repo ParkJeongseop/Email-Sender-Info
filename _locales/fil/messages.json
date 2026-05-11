@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Impormasyon ng Nagpadala Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Ipakita ang mga favicon ng nagpadala at badge ng pagkakakilanlan (kumpanya / personal / pamahalaan) sa Gmail, Outlook, iCloud, Yahoo, at higit pa.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

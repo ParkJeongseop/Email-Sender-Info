@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Siuntėjo informacija Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Rodo siuntėjų favikonus ir tapatybės ženklą (įmonė / asmeninis / valdžia) Gmail, Outlook, iCloud, Yahoo ir kitose.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

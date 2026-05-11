@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Informações do remetente Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Mostra favicons de remetentes e um selo de identidade (empresa / pessoal / governo) no Gmail, Outlook, iCloud, Yahoo e mais.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

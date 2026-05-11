@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "이메일 발신자 정보 Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Gmail, 네이버메일, 다음메일, 카카오메일, iCloud 등에서 발신자 favicon과 신원 뱃지(회사 / 개인 / 정부)를 표시합니다.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

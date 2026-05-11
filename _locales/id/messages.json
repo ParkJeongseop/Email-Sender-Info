@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Info Pengirim Email Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Menampilkan favicon pengirim dan lencana identitas (perusahaan / pribadi / pemerintah) di Gmail, Outlook, iCloud, Yahoo, dan lainnya.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

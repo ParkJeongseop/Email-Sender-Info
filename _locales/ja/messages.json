@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "メール送信者情報 Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Gmail、Outlook、iCloud、Yahoo などで送信者のファビコンと身元バッジ（企業 / 個人 / 政府）を表示します。",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

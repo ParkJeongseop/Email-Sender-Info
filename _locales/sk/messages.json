@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Informácie o odosielateľovi Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Zobrazuje favikony odosielateľov a identifikačný odznak (firma / osobné / štátne) v Gmaile, Outlooku, iClounde, Yahoo a ďalších.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

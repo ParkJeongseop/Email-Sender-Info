@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Informații despre expeditor Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Afișează favicon-urile expeditorilor și o insignă de identitate (companie / personal / guvern) în Gmail, Outlook, iCloud, Yahoo și altele.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Інформація про відправника Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Показує favicon відправників і значок ідентичності (компанія / особистий / уряд) у Gmail, Outlook, iCloud, Yahoo та інших.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

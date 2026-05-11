@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "اطلاعات فرستنده ایمیل Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "نمایش فاوآیکن فرستنده و نشان هویت (شرکت / شخصی / دولتی) در Gmail، Outlook، iCloud، Yahoo و موارد دیگر.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

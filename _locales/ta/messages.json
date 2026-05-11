@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "மின்னஞ்சல் அனுப்புநரின் தகவல் Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Gmail, Outlook, iCloud, Yahoo மற்றும் பிற சேவைகளில் அனுப்புநரின் favicon மற்றும் அடையாள பேட்ஜ் (நிறுவனம் / தனிப்பட்ட / அரசு) காட்டு.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

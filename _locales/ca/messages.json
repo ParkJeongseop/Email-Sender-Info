@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Informació del remitent Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Mostra les favicones dels remitents i una insígnia d'identitat (empresa / personal / govern) a Gmail, Outlook, iCloud, Yahoo i més.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

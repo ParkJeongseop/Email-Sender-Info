@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "ข้อมูลผู้ส่งอีเมล Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "แสดง favicon ของผู้ส่งและป้ายระบุตัวตน (บริษัท / ส่วนตัว / รัฐบาล) ใน Gmail, Outlook, iCloud, Yahoo และอื่น ๆ",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "Absenderinformationen Email Sender Info",
+    "description": "Extension name (shown in Chrome Web Store and chrome://extensions)."
+  },
+  "extensionDescription": {
+    "message": "Zeigt Absender-Favicons und ein Identitätsabzeichen (Firma / Privat / Behörde) in Gmail, Outlook, iCloud, Yahoo und weiteren.",
+    "description": "Description shown in chrome://extensions and the Chrome Web Store."
+  },
+  "actionTitle": {
+    "message": "Email Sender Info",
+    "description": "Tooltip on the toolbar action icon."
+  }
+}
