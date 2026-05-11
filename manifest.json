@@ -17,7 +17,8 @@
     "https://outlook.live.com/*",
     "https://outlook.office.com/*",
     "https://outlook.office365.com/*",
-    "https://www.icloud.com/*"
+    "https://www.icloud.com/*",
+    "https://mail.yahoo.com/*"
   ],
   "content_scripts": [
     {
@@ -91,6 +92,16 @@
         "src/lib/personal-domains.js",
         "src/lib/icon-builder.js",
         "src/adapters/icloud.js"
+      ],
+      "css": ["src/styles/common.css"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mail.yahoo.com/*"],
+      "js": [
+        "src/lib/personal-domains.js",
+        "src/lib/icon-builder.js",
+        "src/adapters/yahoo.js"
       ],
       "css": ["src/styles/common.css"],
       "run_at": "document_idle"
