@@ -18,7 +18,8 @@
     "default_title": "__MSG_actionTitle__"
   },
   "background": {
-    "service_worker": "src/background.js"
+    "service_worker": "src/background.js",
+    "scripts": ["src/background.js"]
   },
   "host_permissions": [
     "https://www.google.com/s2/*",
@@ -120,5 +121,11 @@
       "css": ["src/styles/common.css"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "email-sender-info@parkjeongseop.com",
+      "strict_min_version": "128.0"
+    }
+  }
 }
