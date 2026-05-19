@@ -2,6 +2,10 @@
 
 > Caller ID for your inbox — see a favicon and identity badge next to every sender across 8 mail providers including Gmail, Outlook, iCloud, and Yahoo.
 
+Open your inbox and all you see is a list of sender names — it's hard to tell at a glance which emails are from a company, which are personal, and which are official government notices. Email Sender Info adds a small icon next to every sender so you can scan your inbox instantly, without opening a thing.
+
+![Email Sender Info showing sender favicons in a Gmail inbox](docs/images/screenshot-gmail.png)
+
 ## Features
 
 For every email, the extension shows:
@@ -92,6 +96,8 @@ MIT
 # Email Sender Info (한국어)
 
 > 받은편지함의 Caller ID — Gmail, 네이버메일, 다음메일, 카카오메일, iCloud 등 8개 메일 서비스의 모든 발신자 옆에 favicon과 식별 뱃지를 표시합니다.
+
+받은편지함을 열면 발신자 이름만 줄줄이 보입니다 — 어떤 메일이 회사에서 왔는지, 개인이 보냈는지, 정부·공공기관 공문인지 한눈에 구분하기 어렵습니다. Email Sender Info는 모든 발신자 옆에 작은 아이콘을 붙여, 메일을 열지 않고도 받은편지함을 한눈에 훑을 수 있게 합니다.
 
 ## 기능
 
