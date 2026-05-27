@@ -109,7 +109,7 @@ MIT
 
 <a href="https://chromewebstore.google.com/detail/email-sender-info/jmohebmhoocghblgakoflolnjaephmpg" target="_blank"><img src="https://imgur.com/3C4iKO0.png" width="64" height="64"></a>
 <a href="https://store.whale.naver.com/detail/cmhdkjaoliiocjfjoaalfahnmnealkcd" target="_blank"><img src="https://i.imgur.com/9jjV1z7.png" width="64" height="64"></a>
-<a href="https://addons.mozilla.org/en-US/firefox/addon/email-sender-info/" target="_blank"><img src="https://imgur.com/ihXsdDO.png" width="64" height="64"></a>
+<a href="https://addons.mozilla.org/ko/firefox/addon/email-sender-info/" target="_blank"><img src="https://imgur.com/ihXsdDO.png" width="64" height="64"></a>
 
 ## 기능
 
