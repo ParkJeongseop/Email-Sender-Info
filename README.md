@@ -6,6 +6,12 @@ Open your inbox and all you see is a list of sender names — it's hard to tell 
 
 ![Email Sender Info showing sender favicons in a Gmail inbox](docs/images/screenshot-gmail.png)
 
+## Install
+
+<a href="https://chromewebstore.google.com/detail/email-sender-info/jmohebmhoocghblgakoflolnjaephmpg" target="_blank"><img src="https://imgur.com/3C4iKO0.png" width="64" height="64"></a>
+<a href="https://store.whale.naver.com/detail/cmhdkjaoliiocjfjoaalfahnmnealkcd" target="_blank"><img src="https://i.imgur.com/9jjV1z7.png" width="64" height="64"></a>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/email-sender-info/" target="_blank"><img src="https://imgur.com/ihXsdDO.png" width="64" height="64"></a>
+
 ## Features
 
 For every email, the extension shows:
@@ -98,6 +104,12 @@ MIT
 > 받은편지함의 Caller ID — Gmail, 네이버메일, 다음메일, 카카오메일, iCloud 등 8개 메일 서비스의 모든 발신자 옆에 favicon과 식별 뱃지를 표시합니다.
 
 받은편지함을 열면 발신자 이름만 줄줄이 보입니다 — 어떤 메일이 회사에서 왔는지, 개인이 보냈는지, 정부·공공기관 공문인지 한눈에 구분하기 어렵습니다. Email Sender Info는 모든 발신자 옆에 작은 아이콘을 붙여, 메일을 열지 않고도 받은편지함을 한눈에 훑을 수 있게 합니다.
+
+## 설치
+
+<a href="https://chromewebstore.google.com/detail/email-sender-info/jmohebmhoocghblgakoflolnjaephmpg" target="_blank"><img src="https://imgur.com/3C4iKO0.png" width="64" height="64"></a>
+<a href="https://store.whale.naver.com/detail/cmhdkjaoliiocjfjoaalfahnmnealkcd" target="_blank"><img src="https://i.imgur.com/9jjV1z7.png" width="64" height="64"></a>
+<a href="https://addons.mozilla.org/en-US/firefox/addon/email-sender-info/" target="_blank"><img src="https://imgur.com/ihXsdDO.png" width="64" height="64"></a>
 
 ## 기능
 
