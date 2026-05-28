@@ -9,6 +9,7 @@ Open your inbox and all you see is a list of sender names — it's hard to tell 
 ## Install
 
 <a href="https://chromewebstore.google.com/detail/email-sender-info/jmohebmhoocghblgakoflolnjaephmpg" target="_blank"><img src="https://imgur.com/3C4iKO0.png" width="64" height="64"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/email-sender-info/fjliddlggkfhjplmnhkeaahehnckajde" target="_blank"><img src="https://imgur.com/vMcaXaw.png" width="64" height="64"></a>
 <a href="https://store.whale.naver.com/detail/cmhdkjaoliiocjfjoaalfahnmnealkcd" target="_blank"><img src="https://i.imgur.com/9jjV1z7.png" width="64" height="64"></a>
 <a href="https://addons.mozilla.org/en-US/firefox/addon/email-sender-info/" target="_blank"><img src="https://imgur.com/ihXsdDO.png" width="64" height="64"></a>
 
@@ -108,6 +109,7 @@ MIT
 ## 설치
 
 <a href="https://chromewebstore.google.com/detail/email-sender-info/jmohebmhoocghblgakoflolnjaephmpg" target="_blank"><img src="https://imgur.com/3C4iKO0.png" width="64" height="64"></a>
+<a href="https://microsoftedge.microsoft.com/addons/detail/email-sender-info/fjliddlggkfhjplmnhkeaahehnckajde" target="_blank"><img src="https://imgur.com/vMcaXaw.png" width="64" height="64"></a>
 <a href="https://store.whale.naver.com/detail/cmhdkjaoliiocjfjoaalfahnmnealkcd" target="_blank"><img src="https://i.imgur.com/9jjV1z7.png" width="64" height="64"></a>
 <a href="https://addons.mozilla.org/ko/firefox/addon/email-sender-info/" target="_blank"><img src="https://imgur.com/ihXsdDO.png" width="64" height="64"></a>
 
